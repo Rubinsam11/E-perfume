@@ -75,7 +75,7 @@ export function Footer() {
         <div className="border-t mt-12 pt-8">
           <p className="text-center text-gray-500 text-sm">
             © {new Date().getFullYear()} Essence. All rights reserved.
-             ( Create by Rubin )
+             (Create by Rubin)
           </p>
         </div>
       </div>
