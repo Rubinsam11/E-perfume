@@ -16,13 +16,20 @@ export function ProductFilters({ filters, onFilterChange }: ProductFiltersProps)
     'Brut', 'Ultra Male', 'Black Opium', 'Creed Aetus'
   ];
 
+  // Handle category change (Fragrance Category)
   const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     onFilterChange({ ...filters, category: e.target.value });
   };
 
+  // Handle size change
   const handleSizeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    onFilterChange({ ...filters, size: e.target.value });
+    const selectedSize = e.target.value;
+    console.log('Selected Size:', selectedSize); // Debug the selected size
+    onFilterChange({ ...filters, size: selectedSize });
   };
+
+  // List of sizes without 'All'
+  const sizes = ['6ml', '12ml', '30ml', '50ml', '100ml'];
 
   return (
     <div className="flex justify-center mt-24">
@@ -32,11 +39,11 @@ export function ProductFilters({ filters, onFilterChange }: ProductFiltersProps)
           <div className="flex flex-col">
             <h3 className="text-lg font-medium text-gray-900 mb-2">Size</h3>
             <select
-              value={filters.size}
+              value={filters.size} // This binds the selected size to the `filters.size` value
               onChange={handleSizeChange}
               className="h-10 px-4 text-gray-600 border rounded-md"
             >
-              {['All', '6ml', '12ml', '30ml', '50ml', '100ml'].map((size) => (
+              {sizes.map((size) => (
                 <option key={size} value={size}>
                   {size}
                 </option>
@@ -48,7 +55,7 @@ export function ProductFilters({ filters, onFilterChange }: ProductFiltersProps)
           <div className="flex flex-col">
             <h3 className="text-lg font-medium text-gray-900 mb-2">Category</h3>
             <select
-              value={filters.category}
+              value={filters.category} // This binds the selected category to `filters.category`
               onChange={handleCategoryChange}
               className="h-10 px-4 text-gray-600 border rounded-md"
             >
