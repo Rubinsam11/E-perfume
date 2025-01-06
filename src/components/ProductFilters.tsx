@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import type { ProductFilters } from '../types';
 
 interface ProductFiltersProps {
@@ -16,6 +16,9 @@ export function ProductFilters({ filters, onFilterChange }: ProductFiltersProps)
     'Brut', 'Ultra Male', 'Black Opium', 'Creed Aetus'
   ];
 
+  // Include 'All' in the sizes array
+  const sizes = ['All', '6ml', '12ml', '30ml', '50ml', '100ml'];
+
   // Handle category change (Fragrance Category)
   const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     onFilterChange({ ...filters, category: e.target.value });
@@ -24,12 +27,15 @@ export function ProductFilters({ filters, onFilterChange }: ProductFiltersProps)
   // Handle size change
   const handleSizeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedSize = e.target.value;
-    console.log('Selected Size:', selectedSize); // Debug the selected size
     onFilterChange({ ...filters, size: selectedSize });
   };
 
-  // List of sizes without 'All'
-  const sizes = ['6ml', '12ml', '30ml', '50ml', '100ml'];
+  // On page load or refresh, do not show any size by default, only 6ml
+  useEffect(() => {
+    if (!filters.size) {
+      onFilterChange({ ...filters, size: '6ml' }); // Default to '6ml' initially
+    }
+  }, [filters, onFilterChange]);
 
   return (
     <div className="flex justify-center mt-24">
@@ -39,10 +45,11 @@ export function ProductFilters({ filters, onFilterChange }: ProductFiltersProps)
           <div className="flex flex-col">
             <h3 className="text-lg font-medium text-gray-900 mb-2">Size</h3>
             <select
-              value={filters.size} // This binds the selected size to the `filters.size` value
+              value={filters.size || '6ml'} // Default to '6ml' if no size is selected
               onChange={handleSizeChange}
               className="h-10 px-4 text-gray-600 border rounded-md"
             >
+              {/* If no size is selected, show all sizes */}
               {sizes.map((size) => (
                 <option key={size} value={size}>
                   {size}
@@ -55,7 +62,7 @@ export function ProductFilters({ filters, onFilterChange }: ProductFiltersProps)
           <div className="flex flex-col">
             <h3 className="text-lg font-medium text-gray-900 mb-2">Category</h3>
             <select
-              value={filters.category} // This binds the selected category to `filters.category`
+              value={filters.category || 'All'} // Default to 'All' if no category is selected
               onChange={handleCategoryChange}
               className="h-10 px-4 text-gray-600 border rounded-md"
             >
