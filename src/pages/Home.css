@@ -76,14 +76,6 @@
   border-radius: 50px;
   object-fit: cover;      /* Make sure the image covers the entire container */
 }
-
-  
-  .home-image {
-    width: 90%;
-     display: center ;
-    height: 24rem;
-    object-fit: cover;
-  }
   
   .home-text {
     display: flex;
