@@ -58,13 +58,29 @@
     }
   }
   
-  .home-image-container {
-    border-radius: 0.5rem;
-    overflow: hidden;
-  }
+/* Styling for home-image-container */
+.home-image-container {
+  border-radius: 0.5rem;
+  overflow: hidden;  /* Hides any image overflow */
+  
+  /* Use flexbox to center the image inside the container */
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center;     /* Centers the image vertically */
+}
+
+/* Styling for home-image */
+.home-image {
+  width: 100%;            /* Make the image fill the container's width */
+  height: 24rem;          /* Set a fixed height */
+  border-radius: 50px;
+  object-fit: cover;      /* Make sure the image covers the entire container */
+}
+
   
   .home-image {
     width: 90%;
+     display: center ;
     height: 24rem;
     object-fit: cover;
   }
