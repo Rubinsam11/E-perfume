@@ -6,7 +6,7 @@ export const products = [
       name: 'Chocolate',
       description: 'A rich and indulgent fragrance with sweet chocolate notes.',
       price: 99.99,
-      image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=800',
+      image: 'https://shorturl.at/WzK8f ',
       size: '6ml',  // Example size
       category: 'Sweet',
       notes: ['Chocolate']
@@ -16,7 +16,7 @@ export const products = [
       name: 'Chocolate',
       description: 'A rich and indulgent fragrance with sweet chocolate notes.',
       price: 119.99,  // You can adjust the price for different sizes
-      image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=800',
+      image: 'https://shorturl.at/WzK8f ',
       size: '12ml',  // Example size
       category: 'Sweet',
       notes: ['Chocolate']
@@ -26,7 +26,7 @@ export const products = [
       name: 'Chocolate',
       description: 'A rich and indulgent fragrance with sweet chocolate notes.',
       price: 139.99,  // You can adjust the price for different sizes
-      image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=800',
+      image: 'https://shorturl.at/WzK8f ',
       size: '30ml',  // Example size
       category: 'Sweet',
       notes: ['Chocolate']
@@ -36,7 +36,7 @@ export const products = [
       name: 'Chocolate',
       description: 'A rich and indulgent fragrance with sweet chocolate notes.',
       price: 159.99,  // You can adjust the price for different sizes
-      image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=800',
+      image: 'https://shorturl.at/WzK8f ',
       size: '50ml',  // Example size
       category: 'Sweet',
       notes: ['Chocolate']
@@ -46,7 +46,7 @@ export const products = [
       name: 'Chocolate',
       description: 'A rich and indulgent fragrance with sweet chocolate notes.',
       price: 199.99,  // You can adjust the price for different sizes
-      image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=800',
+      image: 'https://shorturl.at/WzK8f ',
       size: '100ml',  // Example size
       category: 'Sweet',
       notes: ['Chocolate']
@@ -59,7 +59,7 @@ export const products = [
       name: 'Legend Musk',
       description: 'A captivating blend of musk and warm spices, with hints of woods.',
       price: 85.99,  // Price for 6ml
-      image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=800',
+      image: 'https://shorturl.at/7NIYe ',
       size: '6ml',
       category: 'Musk',
       notes: ['Musk', 'Spices', 'Wood']
@@ -69,7 +69,7 @@ export const products = [
       name: 'Legend Musk',
       description: 'A captivating blend of musk and warm spices, with hints of woods.',
       price: 99.99,  // Price for 12ml
-      image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=800',
+      image: 'https://shorturl.at/7NIYe ',
       size: '12ml',
       category: 'Musk',
       notes: ['Musk', 'Spices', 'Wood']
@@ -89,7 +89,7 @@ export const products = [
       name: 'Legend Musk',
       description: 'A captivating blend of musk and warm spices, with hints of woods.',
       price: 85.99,  // Price for 50ml
-      image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=800',
+      image: 'https://shorturl.at/7NIYe ',
       size: '50ml',
       category: 'Musk',
       notes: ['Musk', 'Spices', 'Wood']
@@ -99,7 +99,7 @@ export const products = [
       name: 'Legend Musk',
       description: 'A captivating blend of musk and warm spices, with hints of woods.',
       price: 169.99,  // Price for 100ml
-      image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=800',
+      image: 'https://shorturl.at/7NIYe ',
       size: '100ml',
       category: 'Musk',
       notes: ['Musk', 'Spices', 'Wood']
