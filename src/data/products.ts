@@ -1,8 +1,58 @@
 export const products = [
   // Existing Products
 
+{
+  id: '0-6ml',
+  name: 'One Million',
+  description: 'A luxurious and captivating fragrance with bold spicy notes.',
+  price: 99.99,
+  image: 'https://img.freepik.com/premium-photo/golden-perfume-bottle-black-background-luxury-fragrance_897586-123.jpg',
+  size: '6ml',  // Example size
+  category: 'Spicy',
+  notes: ['Spicy', 'Cinnamon', 'Leather']
+},
+{
+  id: '0-12ml',  // Unique id for the 12ml size
+  name: 'One Million',
+  description: 'A luxurious and captivating fragrance with bold spicy notes.',
+  price: 119.99,  // Price for 12ml size
+  image: 'https://img.freepik.com/premium-photo/golden-perfume-bottle-black-background-luxury-fragrance_897586-123.jpg',
+  size: '12ml',  // Example size
+  category: 'Spicy',
+  notes: ['Spicy', 'Cinnamon', 'Leather']
+},
+{
+  id: '0-30ml',  // Unique id for the 30ml size
+  name: 'One Million',
+  description: 'A luxurious and captivating fragrance with bold spicy notes.',
+  price: 139.99,  // Price for 30ml size
+  image: 'https://img.freepik.com/premium-photo/golden-perfume-bottle-black-background-luxury-fragrance_897586-123.jpg',
+  size: '30ml',  // Example size
+  category: 'Spicy',
+  notes: ['Spicy', 'Cinnamon', 'Leather']
+},
+{
+  id: '0-50ml',  // Unique id for the 50ml size
+  name: 'One Million',
+  description: 'A luxurious and captivating fragrance with bold spicy notes.',
+  price: 159.99,  // Price for 50ml size
+  image: 'https://img.freepik.com/premium-photo/golden-perfume-bottle-black-background-luxury-fragrance_897586-123.jpg',
+  size: '50ml',  // Example size
+  category: 'Spicy',
+  notes: ['Spicy', 'Cinnamon', 'Leather']
+},
+{
+  id: '0-100ml',  // Unique id for the 100ml size
+  name: 'One Million',
+  description: 'A luxurious and captivating fragrance with bold spicy notes.',
+  price: 199.99,  // Price for 100ml size
+  image: 'https://img.freepik.com/premium-photo/golden-perfume-bottle-black-background-luxury-fragrance_897586-123.jpg',
+  size: '100ml',  // Example size
+  category: 'Spicy',
+  notes: ['Spicy', 'Cinnamon', 'Leather']
+},
     {
-      id: '3',
+      id: '3-6ml',
       name: 'Chocolate',
       description: 'A rich and indulgent fragrance with sweet chocolate notes.',
       price: 99.99,
